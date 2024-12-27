@@ -1,0 +1,95 @@
+### Main Requirements:
+
+1. Navbar:
+   - Design a responsive Navbar as per the provided wireframe/Figma design.✅
+   - Include the following menu options:
+     - Home✅
+     - All Campaigns✅
+     - Add New Campaign (Private/Protected route)✅
+     - My Campaigns (Private/Protected route)✅
+     - My Donations (Private/Protected route)✅
+     - Login/Register (Show conditionally when the user is logged out).
+   - When logged in:✅
+     - Display the user’s profile picture (from photoURL) with a hoverable tooltip showing their name.✅
+     - Replace Login/Register with a Logout button.✅
+
+2. Home Page:
+   - Include:
+     - Banner/Slider Section:
+       - A carousel with at least three slides containing meaningful information about the platform.✅
+     - Running Campaigns Section:
+       - Display six active campaigns (fetch data from the database).✅
+       - Each card should include a "See More" button that redirects to the details page.✅
+     - Two Extra Sections:
+       - Add two sections relevant to the theme, such as "Why Choose Us?" or "How It Works."
+
+3. Add New Campaign Page (/addCampaign):
+   - A private/protected route with a form to add campaigns. Fields should include:
+     - Image/Thumbnail URL
+     - Campaign Title
+     - Campaign Type (Dropdown: Personal, Startup, Creative, etc.)
+     - Description
+     - Minimum Donation Amount
+     - Deadline (Date Picker)
+     - User Email (Read-Only)
+     - User Name (Read-Only)
+   - Upon submission, save the data to the database and display a success message using toast/sweet alert.✅
+
+4. Campaign Details Page (/campaign/:id):
+   - Private/Protected route.✅
+   - Display complete campaign details retrieved from the database.
+   - Include a Donate button:✅
+     - If the campaign deadline has passed, show an appropriate error message or toast.✅
+     - Otherwise, store the donation details (user email, name, and campaign data) in a donations collection.✅
+
+5. All Campaigns Page (/campaigns):
+   - Display all campaigns in a table or card layout.✅
+   - Include sorting functionality for "Minimum Donation Amount" (ascending/descending).✅
+
+6. My Campaigns Page (/myCampaign):
+   - Private/Protected route.✅
+   - Display only the campaigns added by the logged-in user.
+   - Provide "Update" and "Delete" buttons for each campaign:
+     - Update:
+       - Redirect to an update form or open a modal to edit the campaign.✅
+     - Delete:
+       - Show a confirmation dialog before deleting.✅
+
+7. My Donations Page (/myDonations):
+   - Private/Protected route.✅
+   - Display all campaigns the user has donated to in a card layout.✅
+
+8. Authentication:
+   - Login Page:
+     - Allow email/password login and one social login option (Google or GitHub).✅
+   - Register Page:
+     - Validate passwords for:
+       - At least one uppercase letter.✅
+       - At least one lowercase letter.✅
+       - A minimum of 6 characters.✅
+   - Use toast/sweet alert for success/error messages.✅
+
+9. 404 Page:
+   - Create a visually appealing "Page Not Found" design.✅
+
+10. Responsive Design:
+    - Ensure all components and pages are mobile, tablet, and desktop friendly.✅
+
+11. Environment Variables:
+    - Use `.env` to hide Firebase config keys and database credentials.✅
+
+12. Loading Spinner:
+    - Display a spinner when fetching or submitting data.✅
+
+13. Dark/Light Theme:
+    - Add a toggle to switch between dark and light themes on the home page.✅
+
+14. Deployment:
+    - Host the client-side on Netlify/Firebase/Surge.✅
+    - Host the server-side on Vercel.✅
+    - Ensure smooth routing without errors on reload.✅
+
+15. Optional Challenges:
+    - Implement animations using libraries like Lottie React or React Awesome Reveal.
+    - Add tooltips using React Tooltip.
+
