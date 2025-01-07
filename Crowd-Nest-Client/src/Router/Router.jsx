@@ -1,9 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
+import AboutPage from "../Pages/AboutPage";
+import Contact from "../Pages/Contact";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import NotFound from "../Pages/NotFound";
 import Register from "../Pages/Register";
+import SupportPage from "../Pages/SupportPage";
 import AddCampaign from "./../Pages/AddCampaign";
 import CampaignDetails from "./../Pages/CampaignDetails";
 import Campaigns from "./../Pages/Campaigns";
@@ -28,6 +31,14 @@ const router = createBrowserRouter(
           path: "/campaigns",
           element: <Campaigns></Campaigns>,
           loader: () => fetch("https://crowd-nest-server.vercel.app/campaigns"),
+        },
+        {
+          path: "/support",
+          element: <SupportPage></SupportPage>,
+        },
+        {
+          path: "/about",
+          element: <AboutPage></AboutPage>,
         },
         {
           path: "/addCampaign",
@@ -86,6 +97,10 @@ const router = createBrowserRouter(
         {
           path: "/register",
           element: <Register></Register>,
+        },
+        {
+          path: "/contact",
+          element: <Contact></Contact>,
         },
       ],
     },

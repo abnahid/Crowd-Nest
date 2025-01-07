@@ -17,7 +17,7 @@ const Campaign = ({ campaign }) => {
 
   return (
     <div
-      className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden transition-transform transform hover:scale-105"
+      className="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden transition-transform transform hover:scale-105"
       data-aos="fade-up"
     >
       {/* Campaign Image */}

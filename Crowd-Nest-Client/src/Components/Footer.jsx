@@ -44,10 +44,10 @@ const Footer = () => {
               Start a Campaign
             </NavLink>
             <NavLink
-              to="/success-stories"
+              to="/support"
               className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-btnHover link link-hover"
             >
-              Success Stories
+              Support
             </NavLink>
             <NavLink
               to="/faq"

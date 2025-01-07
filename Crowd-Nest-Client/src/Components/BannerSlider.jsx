@@ -44,7 +44,7 @@ const BannerSlider = () => {
   ];
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-800 py-16 px-4 md:px-8 rounded-lg relative">
+    <div className="bg-gray-50 dark:bg-gray-800 py-8 px-4 md:px-8 rounded-lg relative max-h-[90vh]">
       <Swiper
         modules={[Navigation]}
         navigation={{
@@ -76,7 +76,7 @@ const BannerSlider = () => {
               </div>
 
               {/* Lottie Animation */}
-              <div className="w-full md:w-1/2 max-w-[300px] md:max-w-[500px] mx-auto mb-4 md:mb-8">
+              <div className="w-full md:w-1/2 max-w-[300px] md:max-w-[400px] mx-auto mb-4 md:mb-10">
                 <Lottie animationData={campaignAnimation} loop={true} />
               </div>
             </div>
